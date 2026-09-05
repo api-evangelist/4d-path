@@ -1,0 +1,107 @@
+generated: '2026-09-05'
+method: probed
+source: live GET probes of the named /.well-known/ path list on every host in apis.yml plus
+  the one API-shaped host that resolves in DNS (api.4dpath.com)
+note: >-
+  Every named path returned 404 on every host. No document was fetched and none was saved, so
+  NO WellKnown and NO SecurityTxt pointer is emitted in apis.yml — this file records a verified
+  absence, not a presence. 4dpath.com is a WordPress site behind a Sucuri edge; its 404s are
+  real 404 status codes carrying the theme's 404 page, not soft-200s. api.4dpath.com resolves
+  to an Azure Web App (20.119.8.23) that answers Microsoft's stock "Azure Web App - Error 404"
+  page for every path, including the site root.
+path_echo_control: passed
+hit_count: 0
+hosts:
+- host: https://4dpath.com
+  soft_404_control:
+    path: /.well-known/4d-path-negative-control-7f3ab91c.json
+    status: 404
+    result: passed
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/apis.json
+    status: 404
+  - path: /apis.json
+    status: 404
+  - path: /apis.yml
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+  - path: /.well-known/ucp.json
+    status: 404
+  - path: /.well-known/acp.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://www.4dpath.com
+  note: 301-redirects to the apex; probed for completeness.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/apis.json
+    status: 404
+  - path: /apis.json
+    status: 404
+  - path: /apis.yml
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+- host: https://api.4dpath.com
+  note: >-
+    Resolves in DNS to an Azure Web App. Returns the Microsoft "Azure Web App - Error 404"
+    HTML page (2,667 bytes) for the site root and for every path probed, so no application
+    is publicly routed here.
+  soft_404_control:
+    path: /.well-known/4d-path-negative-control-7f3ab91c.json
+    status: 404
+    result: passed
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/apis.json
+    status: 404
+  - path: /apis.json
+    status: 404
+  - path: /apis.yml
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+  - path: /.well-known/ucp.json
+    status: 404
+  - path: /.well-known/acp.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404

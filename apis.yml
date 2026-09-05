@@ -1,17 +1,49 @@
 aid: 4d-path
 name: 4D Path
-description: '4D Path is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: '4D Path, Inc. is a Newton, Massachusetts computational-pathology company founded
+  in 2016 that builds the Q-plasia OncoReader (QPOR) platform, a patented, cloud-based precision
+  oncology and computer-aided cancer diagnostic system. Rather than conventional image-classification
+  AI, QPOR applies statistical physics and cancer biology to digitized H&E-stained whole-slide
+  biopsy and resection images to measure and quantify cell-cycle deregulation and tumor immune
+  microenvironment dynamics, producing biomarker profiling, grading and therapy-response
+  prediction without additional molecular assays such as IHC, FISH, RNA-Seq or NGS. Its lead
+  software-as-a-medical-device product, 4D Q-plasia OncoReader Breast, received FDA Breakthrough
+  Device Designation in November 2020, and the company has partnered with PathPresenter to
+  distribute the reader inside the ClinPx clinical workflow platform. 4D Path publishes no public
+  developer program, API reference, SDK or machine-readable contract of any kind — see x-coverage.'
+image: https://4dpath.com/wp-content/uploads/2024/06/4D-Path_logo.png
 url: https://raw.githubusercontent.com/api-evangelist/4d-path/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
-specificationVersion: '0.20'
+x-tier: profile
+x-tier-reason: no-api-surface
+specificationVersion: '0.23'
 created: '2026-09-05'
 modified: '2026-09-05'
 tags:
 - Company
+- Health Care
+- Digital Pathology
+- Oncology
+- Cancer Diagnostics
+- Medical Imaging
+- Artificial Intelligence
+- Precision Medicine
+- Software As A Medical Device
+- Life Sciences
+- Massachusetts
+tags_raw:
+- Company
+- Healthcare
+- Digital Pathology
+- Oncology
+- Cancer Diagnostics
+- Medical Imaging
+- Artificial Intelligence
+- Precision Medicine
+- Software as a Medical Device
+- Life Sciences
+- Massachusetts
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +51,69 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/4d-path-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://4dpath.com/
+- type: About
+  url: https://4dpath.com/about-us/
+- type: Team
+  url: https://4dpath.com/our-teams/
+- type: Platform
+  url: https://4dpath.com/platform/
+- type: Solutions
+  url: https://4dpath.com/solutions/
+- type: Research
+  url: https://4dpath.com/publications-posters/
+- type: Validation
+  url: https://4dpath.com/clinical-validation/
+- type: Blog
+  url: https://4dpath.com/news-events/
+- type: BlogFeeds
+  url: https://4dpath.com/feed/
+- type: Investors
+  url: https://4dpath.com/investors/
+- type: Contact
+  url: https://4dpath.com/contact-us/
+- type: TermsOfService
+  url: https://4dpath.com/terms-conditions
+- type: PrivacyPolicy
+  url: https://4dpath.com/privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/4d-path/
+- type: Twitter
+  url: https://x.com/4DPath
+- type: LLMsTxt
+  url: llms/4d-path-llms.txt
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    4D Path ships the QPOR reader as a software-as-a-medical-device product consumed by
+    pathologists inside PathPresenter's ClinPx whole-slide viewer, and 4dpath.com is a
+    WordPress marketing site with no developer, API, documentation or integration section
+    anywhere in its nav or sitemap; the one API-shaped host that resolves in DNS,
+    api.4dpath.com, is an Azure Web App that answers Microsoft's stock 404 page for its own
+    root and for every contract path probed, including /openapi.json and
+    /swagger/v1/swagger.json.
+  evidence:
+  - url: https://4dpath.com/
+    status: 200
+  - url: https://4dpath.com/openapi.json
+    status: 404
+  - url: https://4dpath.com/llms.txt
+    status: 404
+  - url: https://4dpath.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.4dpath.com/
+    status: 404
+  - url: https://api.4dpath.com/swagger/v1/swagger.json
+    status: 404
+  - url: https://api.github.com/orgs/4dpath
+    status: 404
+  checked: '2026-09-05'

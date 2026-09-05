@@ -64,5 +64,31 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-4D Path is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+4D Path, Inc. is a computational-pathology company in Newton, Massachusetts, founded in 2016. Its
+Q-plasia OncoReader (QPOR) platform applies statistical physics and cancer biology to digitized
+H&E-stained whole-slide biopsy and resection images, quantifying cell-cycle deregulation and tumor
+immune microenvironment dynamics to produce biomarker profiling, grading and therapy-response
+prediction without additional molecular assays (IHC, FISH, RNA-Seq, NGS). Its lead
+software-as-a-medical-device product, 4D Q-plasia OncoReader Breast, received FDA Breakthrough
+Device Designation in November 2020, and the reader is distributed inside PathPresenter's ClinPx
+clinical workflow platform.
+
+## API surface
+
+**4D Path publishes no public API.** Probed 2026-09-05: `4dpath.com` returned 404 for
+`/openapi.json`, `/openapi.yaml`, `/swagger.json`, `/v1/openapi.json`, `/api-docs`, `/docs`,
+`/redoc`, `/api`, `/graphql`, `/llms.txt`, `/apis.json`, `/apis.yml` and every named
+`/.well-known/` path. `api.4dpath.com` resolves to an Azure Web App that answers Microsoft's
+stock 404 page for its own root and every path probed. No `docs.`, `developer.`, `portal.`,
+`app.` or `platform.` subdomain resolves, and there is no GitHub organization, npm package or
+PyPI package under the 4D Path name. See `x-coverage` in `apis.yml`.
+
+## Links
+
+- Website: https://4dpath.com/
+- Platform: https://4dpath.com/platform/
+- Solutions: https://4dpath.com/solutions/
+- Clinical validation: https://4dpath.com/clinical-validation/
+- Publications and posters: https://4dpath.com/publications-posters/
+- News and events: https://4dpath.com/news-events/
+- LinkedIn: https://www.linkedin.com/company/4d-path/
