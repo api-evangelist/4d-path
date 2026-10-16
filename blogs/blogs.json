@@ -2,14 +2,17 @@
   "repo": "4d-path",
   "feeds": [
     {
-      "source": "https://4dpath.com/clinical-validation/",
+      "source": "https://4dpath.com/news-events/",
       "error": "HTTPError"
     },
     {
-      "source": "https://4dpath.com/news-events/",
-      "error": "HTTPError"
+      "source": "https://4dpath.com/feed/",
+      "feed_url": "https://4dpath.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
