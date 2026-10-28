@@ -64,31 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-4D Path, Inc. is a computational-pathology company in Newton, Massachusetts, founded in 2016. Its
-Q-plasia OncoReader (QPOR) platform applies statistical physics and cancer biology to digitized
-H&E-stained whole-slide biopsy and resection images, quantifying cell-cycle deregulation and tumor
-immune microenvironment dynamics to produce biomarker profiling, grading and therapy-response
-prediction without additional molecular assays (IHC, FISH, RNA-Seq, NGS). Its lead
-software-as-a-medical-device product, 4D Q-plasia OncoReader Breast, received FDA Breakthrough
-Device Designation in November 2020, and the reader is distributed inside PathPresenter's ClinPx
-clinical workflow platform.
+4D Path, Inc. is a Newton, Massachusetts computational-pathology company founded in 2016 that builds the Q-plasia OncoReader (QPOR) platform, a patented, cloud-based precision oncology and computer-aided cancer diagnostic system. Rather than conventional image-classification AI, QPOR applies statistical physics and cancer biology to digitized H&E-stained whole-slide biopsy and resection images to measure and quantify cell-cycle deregulation and tumor immune microenvironment dynamics, producing biomarker profiling, grading and therapy-response prediction without additional molecular assays such as IHC, FISH, RNA-Seq or NGS. Its lead software-as-a-medical-device product, 4D Q-plasia OncoReader Breast, received FDA Breakthrough Device Designation in November 2020, and the company has partnered with PathPresenter to distribute the reader inside the ClinPx clinical workflow platform. 4D Path publishes no public developer program, API reference, SDK or machine-readable contract of any kind — see x-coverage.
 
-## API surface
+**Areas:** Company · Healthcare · Digital Pathology · Oncology · Cancer Diagnostics · Medical Imaging · Artificial Intelligence · Precision Medicine · Software as a Medical Device · Life Sciences · Massachusetts
 
-**4D Path publishes no public API.** Probed 2026-09-05: `4dpath.com` returned 404 for
-`/openapi.json`, `/openapi.yaml`, `/swagger.json`, `/v1/openapi.json`, `/api-docs`, `/docs`,
-`/redoc`, `/api`, `/graphql`, `/llms.txt`, `/apis.json`, `/apis.yml` and every named
-`/.well-known/` path. `api.4dpath.com` resolves to an Azure Web App that answers Microsoft's
-stock 404 page for its own root and every path probed. No `docs.`, `developer.`, `portal.`,
-`app.` or `platform.` subdomain resolves, and there is no GitHub organization, npm package or
-PyPI package under the 4D Path name. See `x-coverage` in `apis.yml`.
+## 4D Path on APIs.io
 
-## Links
+Everything profiled for 4D Path is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/4d-path/](https://apis.io/providers/4d-path/)** — or go straight to one of the APIs or properties below.
 
-- Website: https://4dpath.com/
-- Platform: https://4dpath.com/platform/
-- Solutions: https://4dpath.com/solutions/
-- Clinical validation: https://4dpath.com/clinical-validation/
-- Publications and posters: https://4dpath.com/publications-posters/
-- News and events: https://4dpath.com/news-events/
-- LinkedIn: https://www.linkedin.com/company/4d-path/
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [4D Path Domain Security](https://apis.io/security/4d-path/4d-path-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://4dpath.com/)
+- [Blog](https://4dpath.com/news-events/)
+- [Terms of service](https://4dpath.com/terms-conditions)
+- [Privacy policy](https://4dpath.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 6.5** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 1.2 |
+| Access clarity | 10.5 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 7.4** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/4d-path/](https://apis.io/providers/4d-path/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 4D Path: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/4d-path/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
